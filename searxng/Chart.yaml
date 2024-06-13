@@ -18,9 +18,11 @@ maintainers:
   - name: unixfox
     email: searxngatunixfoxdoteu
 dependencies:
-  - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.4.2
+  - name: helmet
+    version: 0.11.0
+    repository: https://charts.companyinfo.dev
+    import-values: # <== It is mandatory if you want to import the Helmet default values.
+      - defaults  
   - name: redis
     version: 0.0.3
     repository: https://charts.pascaliske.dev
